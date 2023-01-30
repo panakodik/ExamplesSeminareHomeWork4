@@ -1,12 +1,12 @@
 ﻿// Найти произведение пар чисел в одномерном массиве. 
 // Парой считаем первый и последний элемент, второй и предпоследний и т.д.
 Console.Clear();
-System.Console.WriteLine();
+Console.WriteLine();
 
 int size = new Random().Next(10, 20);
 int min = 1;
 int max = 200;
-System.Console.WriteLine($"Количество элементов массива: {size}");
+Console.WriteLine($"Количество элементов массива: {size}");
 
 int[] FillArray(int size, int min, int max)
 {
@@ -22,9 +22,9 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        System.Console.Write(arr[i] + " ");
+        Console.Write(arr[i] + " ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
 }
 
 int[] array = FillArray(size, min, max);
